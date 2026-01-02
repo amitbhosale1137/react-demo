@@ -17,6 +17,16 @@ function App() {
     return a+b
   }
 
+  function operation(a,b, op){
+    if(op=='+'){
+      return a+b;
+    }else if(op=='-'){
+      return a-b
+    }else{
+      return a*b
+    }
+  }
+
   return (
     <>
       <h1>React 19 Version</h1>
@@ -27,6 +37,7 @@ function App() {
       Z : {x+y} 
       <h1>{fruit()}</h1>
       <h1>{sum(10,30)}</h1>
+      <h2>{operation(10,20,'')}</h2>
     </>
   )
 }
