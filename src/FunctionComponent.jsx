@@ -1,17 +1,18 @@
 function EventCalling(){
 
-    function callFun(){
-        alert('function called')
-    }
+    // function callFun(){
+    //     alert('function called')
+    // }
 
-    const fruit=()=>{
-        alert('apple')
+    const fruit=(name)=>{
+        alert(name)
     }
 
     return(
         <div>
             <h1>Event and Function call</h1>
-            <button onClick={fruit}>Click Me</button>
+            <button onClick={()=>fruit('apple')}>Apple</button>
+            <button onClick={()=>fruit('banana')}>Banana</button>
         </div>
     )
 }
