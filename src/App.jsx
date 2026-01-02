@@ -9,6 +9,10 @@ function App() {
   let x = 10
   let y = 20
 
+  function fruit(){
+    return 'Apple'
+  }
+
   return (
     <>
       <h1>React 19 Version</h1>
@@ -16,7 +20,8 @@ function App() {
       <Login/>
       <Profile/>
       <h1>{name}</h1>  
-      Z : {x+y}  
+      Z : {x+y} 
+      <h1>{fruit()}</h1>
     </>
   )
 }
