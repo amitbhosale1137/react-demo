@@ -5,7 +5,7 @@ import Login, { Profile } from './UserComponent'
 
 function App() {
 
-  const name ='Amit Bhosale'
+  const name = undefined
   let x = 10
   let y = 20
 
@@ -33,7 +33,7 @@ function App() {
       <Header/>
       <Login/>
       <Profile/>
-      <h1>{name}</h1>  
+      <h1>{name? name: 'user not found'}</h1>  
       Z : {x+y} 
       <h1>{fruit()}</h1>
       <h1>{sum(10,30)}</h1>
