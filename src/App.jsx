@@ -6,6 +6,15 @@ import Login, { Profile } from './UserComponent'
 function App() {
 
   const name = undefined
+
+  const userObj ={
+    name:'Amit',
+    email:'amit@gmail.com',
+    age:30
+  }
+
+  const userArray =['amit','priya','sanket']
+
   let x = 10
   let y = 20
 
@@ -38,6 +47,8 @@ function App() {
       <h1>{fruit()}</h1>
       <h1>{sum(10,30)}</h1>
       <h2>{operation(10,20,'')}</h2>
+      <h2>{userObj.email}</h2>
+      <h2>{userArray[1]}</h2>
     </>
   )
 }
