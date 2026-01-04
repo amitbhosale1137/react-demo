@@ -21,3 +21,7 @@ execute this command into terminal -
 
 to run app - npm run dev
 http://localhost:5173/
+
+const [fruit, setFruit] = useState('Apple')
+fruit - state value
+setFruit - update value
