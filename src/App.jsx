@@ -52,11 +52,25 @@ function App() {
     email:"amit@gmail.com"
   }
 
+  let userObj2={
+    userName:"Peter",
+    age:30,
+    email:"peter@gmail.com"
+  }
+
+  let userObj3={
+    userName:"Mike",
+    age:36,
+    email:"mike@gmail.com"
+  }
+
   return (
     <>
       <h1>React 19 Version</h1>      
       {/* <User name={userName} age={age} email={email} /> */}
       <User user={userObj}/>
+      <User user={userObj2}/>
+      <User user={userObj3}/>
       
       {/* 
       <MultiCondition/>
