@@ -1,5 +1,6 @@
 
 import './App.css'
+import Counter from './Counter'
 import EventCalling from './FunctionComponent'
 import UseStateHooks from './UseStateComponent'
 // import Header from './Header'
@@ -42,6 +43,7 @@ function App() {
     <>
       <h1>React 19 Version</h1>      
       <UseStateHooks/>
+      <Counter/>
       {/* <EventCalling/>
       <Header/>
       <Login/>
