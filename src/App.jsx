@@ -42,10 +42,14 @@ function App() {
   //   }
   // }
 
+  let userName="Amit Bhosale"
+  let age=32
+  let email="amit@gmail.com"
+
   return (
     <>
       <h1>React 19 Version</h1>      
-      <User name="Amit Bhosale" age={32} email="amit@gmail.com" />
+      <User name={userName} age={age} email={email} />
       
       {/* 
       <MultiCondition/>
