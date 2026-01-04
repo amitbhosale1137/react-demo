@@ -4,6 +4,7 @@ import Counter from './Counter'
 import EventCalling from './FunctionComponent'
 import MultiCondition from './MultiCondition'
 import ToggleFunction from './ToggleFunction'
+import User from './User'
 import UseStateHooks from './UseStateComponent'
 // import Header from './Header'
 // import Login, { Profile } from './UserComponent'
@@ -44,9 +45,10 @@ function App() {
   return (
     <>
       <h1>React 19 Version</h1>      
-      <MultiCondition/>
+      <User name="Amit Bhosale" age={32} email="amit@gmail.com" />
       
       {/* 
+      <MultiCondition/>
       <ToggleFunction/>
       <UseStateHooks/>
       <Counter/>
