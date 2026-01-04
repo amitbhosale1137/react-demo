@@ -2,6 +2,7 @@
 import './App.css'
 import Counter from './Counter'
 import EventCalling from './FunctionComponent'
+import ToggleFunction from './ToggleFunction'
 import UseStateHooks from './UseStateComponent'
 // import Header from './Header'
 // import Login, { Profile } from './UserComponent'
@@ -42,9 +43,12 @@ function App() {
   return (
     <>
       <h1>React 19 Version</h1>      
+      <ToggleFunction/>
+      
+      {/* 
       <UseStateHooks/>
       <Counter/>
-      {/* <EventCalling/>
+      <EventCalling/>
       <Header/>
       <Login/>
       <Profile/>
