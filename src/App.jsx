@@ -2,6 +2,7 @@
 import './App.css'
 import Counter from './Counter'
 import EventCalling from './FunctionComponent'
+import MultiCondition from './MultiCondition'
 import ToggleFunction from './ToggleFunction'
 import UseStateHooks from './UseStateComponent'
 // import Header from './Header'
@@ -43,9 +44,10 @@ function App() {
   return (
     <>
       <h1>React 19 Version</h1>      
-      <ToggleFunction/>
+      <MultiCondition/>
       
       {/* 
+      <ToggleFunction/>
       <UseStateHooks/>
       <Counter/>
       <EventCalling/>
