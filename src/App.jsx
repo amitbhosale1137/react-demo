@@ -1,5 +1,6 @@
 
 import './App.css'
+import College from './College'
 import Counter from './Counter'
 import EventCalling from './FunctionComponent'
 import MultiCondition from './MultiCondition'
@@ -64,10 +65,14 @@ function App() {
     email:"mike@gmail.com"
   }
 
+  let collegeName=['ITI','MIT','IET', 'DU', 'MU']
+
   return (
     <>
       <h1>React 19 Version</h1>      
       {/* <User name={userName} age={age} email={email} /> */}
+
+      <College name={collegeName}/>
       <User user={userObj}/>
       <User user={userObj2}/>
       <User user={userObj3}/>
