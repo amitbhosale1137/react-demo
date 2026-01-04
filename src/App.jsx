@@ -1,9 +1,11 @@
 
+import { useState } from 'react'
 import './App.css'
 import College from './College'
 import Counter from './Counter'
 import EventCalling from './FunctionComponent'
 import MultiCondition from './MultiCondition'
+import Student from './Student'
 import ToggleFunction from './ToggleFunction'
 import User from './User'
 import UseStateHooks from './UseStateComponent'
@@ -47,35 +49,43 @@ function App() {
   // let age=32
   // let email="amit@gmail.com"
 
-  let userObj={
-    userName:"Amit Bhosale",
-    age:32,
-    email:"amit@gmail.com"
-  }
+  // let userObj={
+  //   userName:"Amit Bhosale",
+  //   age:32,
+  //   email:"amit@gmail.com"
+  // }
 
-  let userObj2={
-    userName:"Peter",
-    age:30,
-    email:"peter@gmail.com"
-  }
+  // let userObj2={
+  //   userName:"Peter",
+  //   age:30,
+  //   email:"peter@gmail.com"
+  // }
 
-  let userObj3={
-    userName:"Mike",
-    age:36,
-    email:"mike@gmail.com"
-  }
+  // let userObj3={
+  //   userName:"Mike",
+  //   age:36,
+  //   email:"mike@gmail.com"
+  // }
 
-  let collegeName=['ITI','MIT','IET', 'DU', 'MU']
+  // let collegeName=['ITI','MIT','IET', 'DU', 'MU']
+
+  const[student, setStudent]= useState()
 
   return (
     <>
-      <h1>React 19 Version</h1>      
+      <h1>React 19 Version</h1>
+      {
+       student && <Student name={student}/>
+      }
+
+      <button onClick={()=>setStudent('Amit')}>Update Student</button>
+
       {/* <User name={userName} age={age} email={email} /> */}
 
-      <College name={collegeName}/>
+      {/* <College name={collegeName}/>
       <User user={userObj}/>
       <User user={userObj2}/>
-      <User user={userObj3}/>
+      <User user={userObj3}/> */}
       
       {/* 
       <MultiCondition/>
