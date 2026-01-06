@@ -4,12 +4,12 @@ function App(){
   return(
     <>
       <h1>Props in React Js</h1>
-      <Wrapper>
+      <Wrapper color='orange'>
         <h1>Hello Everyone</h1>
       </Wrapper>
       <br />
 
-      <Wrapper>
+      <Wrapper color='blue'>
         <h1>Hello Amit</h1>
       </Wrapper>
       <br />
