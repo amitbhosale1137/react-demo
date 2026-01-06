@@ -1,13 +1,23 @@
-import Employee from "./Employee";
+import Wrapper from "./Wrapper";
 
 function App(){
   return(
     <>
       <h1>Props in React Js</h1>
-      <Employee name='Amit'/>
-      {/* with passing name props */}
-      <Employee/>  
-      {/* without passing name props */}
+      <Wrapper>
+        <h1>Hello Everyone</h1>
+      </Wrapper>
+      <br />
+
+      <Wrapper>
+        <h1>Hello Amit</h1>
+      </Wrapper>
+      <br />
+
+      <Wrapper>
+        <h1>Hello Admin</h1>
+        <h3 style={{color:'red'}}>Please Login</h3>
+      </Wrapper>
     </>
   )
 }
