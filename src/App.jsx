@@ -1,9 +1,9 @@
-import Skills from "./Skills";
+import Radio_DropDown from "./Radio_DropDown";
 
 function App(){
   return(
     <>
-    <Skills/>
+      <Radio_DropDown/>
     </>
   )
 }
