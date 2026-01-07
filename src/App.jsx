@@ -1,9 +1,9 @@
-import ControlledComponent from "./ControlledComponent";
+import Skills from "./Skills";
 
 function App(){
   return(
     <>
-    <ControlledComponent/>
+    <Skills/>
     </>
   )
 }
