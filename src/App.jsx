@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Wrapper from "./Wrapper";
 
 function App(){
+  const[val,setVal]=useState("Amit")
   return(
     <>
       <h1>Props in React Js</h1>
@@ -18,6 +20,10 @@ function App(){
         <h1>Hello Admin</h1>
         <h3 style={{color:'red'}}>Please Login</h3>
       </Wrapper>
+
+      <input type="text" value={val} onChange={(event)=>setVal(event.target.value)} placeholder="Enter Name" />
+      <button onClick={()=>setVal('')}>Clear</button>
+      <h1>{val}</h1>
     </>
   )
 }
