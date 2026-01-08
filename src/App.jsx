@@ -1,9 +1,9 @@
-import Radio_DropDown from "./Radio_DropDown";
+import LoopExample from "./LoopExample";
 
 function App(){
   return(
     <>
-      <Radio_DropDown/>
+      <LoopExample/>
     </>
   )
 }
