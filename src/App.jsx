@@ -1,11 +1,11 @@
-import LoopExample from "./LoopExample";
+import ReuseComponent from "./ReuseComponent";
 
-function App(){
-  return(
+function App() {
+  return (
     <>
-      <LoopExample/>
+      <ReuseComponent />
     </>
-  )
+  );
 }
 
 export default App;
